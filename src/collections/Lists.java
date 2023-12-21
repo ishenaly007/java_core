@@ -42,6 +42,7 @@ public class Lists {
             int ss = random.nextInt(20);
             list.add(ss);
         }
+        System.out.println(list);
 
         //list.removeIf(integer -> integer % 2 == 0);
         Iterator<Integer> iterator = list.iterator();
@@ -50,9 +51,8 @@ public class Lists {
                 iterator.remove();
             }
         }
+        System.out.println(list);
         TreeSet<Integer> treeList = new TreeSet<>(list);
         System.out.println(treeList);
     }
-
-
 }

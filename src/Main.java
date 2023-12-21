@@ -1,6 +1,9 @@
+import comporator_comporable.Person;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
