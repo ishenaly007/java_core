@@ -1,9 +1,8 @@
 package comporator_comporable;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Random;
-import java.util.TreeSet;
+import garbagecollector.Man;
+
+import java.util.*;
 
 public class Person implements Comparable<Person> {
     private String name;
@@ -50,6 +49,5 @@ public class Person implements Comparable<Person> {
         people.add(new Person("Maksim", 45));
         people.add(new Person("Maksim", 22));
         System.out.println(Arrays.toString(people.toArray()));
-
     }
 }
