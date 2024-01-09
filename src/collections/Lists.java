@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Lists {
     ArrayList arrayList = new ArrayList<>();//new ArrayList<>(int capacity)начальная емкость равна 10
-    /* есть у него loadFactor, по дефолту он 75%, то ессть если  75 заполнено,
+    /* есть у него loadFactor, по дефолту он 75%, то есть если 75 заполнено,
      то список удваивается создав новый список */
     //  +  fast index access,  +  fast add and remove atLast
     //  -  slow add and remove in center
@@ -21,7 +21,7 @@ public class Lists {
 
     TreeSet treeSet = new TreeSet<>();
     // множество с сортировкой(если строка то по алфавиту \/ если число то по возрастанию)
-    // скорость от размера зависит
+    // скорость зависит от размера
 
     LinkedHashSet linkedHashSet = new LinkedHashSet<>();
     //просто дает порядок добавления для HashSet
