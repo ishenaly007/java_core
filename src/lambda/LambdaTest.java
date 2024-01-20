@@ -7,6 +7,11 @@ import java.util.Random;
 
 public class LambdaTest {
 
+    private static HowYears howYearsOld(Man man) {
+        if (man.getAge() >= 18) return man1 -> man1.getName() + " взрослый, можно тащить в армию";
+        else return man1 -> man1.getName() + " тц, маленький еще, не повезло";
+    }
+
     private static int sum(int[] nums, Expression func) {
         int result = 0;
         for (int num : nums) {
@@ -59,6 +64,9 @@ public class LambdaTest {
     }
 
     public static void main(String[] args) {
+        System.out.println(howYearsOld(new Man("Ishenaly", 17)).sus(new Man("Ishenaly", 17)));
+        System.out.println(howYearsOld(new Man("Tilek", 18)).sus(new Man("Tilek", 18)));
+        System.out.println("-----------------------------");
         Operationable<Integer> operation = (x, y) -> x + y;
         int result = operation.calculate(10, 21);
 
@@ -120,6 +128,28 @@ public class LambdaTest {
             list.add(random.nextInt(15));
         }
         System.out.println(action(list).execute(list));
+    }
+}
+
+interface HowYears {
+    String sus(Man man);
+}
+
+class Man {
+    private String name;
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Man(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 }
 
