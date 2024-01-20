@@ -1,11 +1,4 @@
-import comporator_comporable.Person;
-
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.TreeSet;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import lombok.UserTestLombok;
 
 public class Main {
     public static void main(String[] args) {
@@ -99,6 +92,8 @@ public class Main {
         System.out.println(generateMan());*/
 
         //findMaxLengthStroke();
+        UserTestLombok user = new UserTestLombok("Tilek", 18);
+        System.out.println(user);
     }
     /*public static String getFormatLogin(String login) {
         return login.trim().toLowerCase();
@@ -148,6 +143,4 @@ public class Main {
         }
         System.out.println(maxLength + " " + strokeMax);
     }*/
-
-
 }

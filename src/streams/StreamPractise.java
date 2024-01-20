@@ -2,7 +2,6 @@ package streams;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 public class StreamPractise {
     public static void main(String[] args) {
