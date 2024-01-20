@@ -1,4 +1,4 @@
-package singleton;
+package patterns.singleton;
 
 public class Director {
     private static volatile Director instance;

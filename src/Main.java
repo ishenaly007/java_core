@@ -1,4 +1,7 @@
 import lombok.UserTestLombok;
+import patterns.builder.Builder;
+import patterns.builder.Director;
+import patterns.builder.ProgrammerBuilder;
 
 public class Main {
     public static void main(String[] args) {
@@ -94,6 +97,7 @@ public class Main {
         //findMaxLengthStroke();
         UserTestLombok user = new UserTestLombok("Tilek", 18);
         System.out.println(user);
+
     }
     /*public static String getFormatLogin(String login) {
         return login.trim().toLowerCase();
