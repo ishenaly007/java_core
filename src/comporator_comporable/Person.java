@@ -1,8 +1,8 @@
 package comporator_comporable;
 
-import garbagecollector.Man;
-
-import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.TreeSet;
 
 public class Person implements Comparable<Person> {
     private String name;

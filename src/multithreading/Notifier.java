@@ -2,7 +2,7 @@ package multithreading;
 
 public class Notifier implements Runnable {
 
-    private Message message;
+    private final Message message;
 
     public Notifier(Message message) {
         this.message = message;

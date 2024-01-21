@@ -1,7 +1,4 @@
 import lombok.UserTestLombok;
-import patterns.builder.Builder;
-import patterns.builder.Director;
-import patterns.builder.ProgrammerBuilder;
 
 public class Main {
     public static void main(String[] args) {

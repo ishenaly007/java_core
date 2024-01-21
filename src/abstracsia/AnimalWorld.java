@@ -1,7 +1,9 @@
 package abstracsia;
 
 public class AnimalWorld {
-    public void getAnimalVoice(Animal animal){animal.voice();}
+    public void getAnimalVoice(Animal animal) {
+        animal.voice();
+    }
 
     public static void main(String[] args) {
         AnimalWorld animalWorld = new AnimalWorld();

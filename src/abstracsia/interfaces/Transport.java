@@ -5,7 +5,8 @@ public interface Transport {
 
     void move(int path);
 
-    default void honk(){
+    default void honk() {
         System.out.println("Bi bip");
-    };
+    }
+
 }

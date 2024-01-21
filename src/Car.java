@@ -13,7 +13,7 @@ public class Car {
     void move(int x1, int y1, int x2, int y2) {
         double path = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         int toplivo = (int) (path / 100 * fuelConsumption);
-        fuel = (int) (fuel - toplivo);
+        fuel = fuel - toplivo;
         if (fuel < 0) {
             System.out.println("Автомобиль " + model + "не доехал, пора заправляться!");
             fuel = 0;

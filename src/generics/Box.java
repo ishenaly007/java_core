@@ -11,7 +11,7 @@ public class Box<T> { //may extends Number (if you want only nums)
         this.item = item;
     }
 
-    public void getDouble(Box<?> asasa){
+    public void getDouble(Box<?> asasa) {
         //you may do this when it wants exactly this one type
         System.out.println(asasa);
     }

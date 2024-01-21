@@ -1,6 +1,6 @@
 package exceptions;
 
-public class MyException extends RuntimeException{
+public class MyException extends RuntimeException {
     String msg, fileName;
 
     public MyException(String msg, String fileName) {

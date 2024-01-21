@@ -1,6 +1,6 @@
 package multithreading;
 
-public class JoinThreadTest extends Thread{
+public class JoinThreadTest extends Thread {
     public JoinThreadTest(String name) {
         super(name);
     }

@@ -1,7 +1,7 @@
 package multithreading;
 
 public class Waiter extends Thread {
-    private Message message;
+    private final Message message;
 
     @Override
     public void run() {

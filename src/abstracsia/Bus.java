@@ -4,8 +4,8 @@ import abstracsia.interfaces.Transport;
 
 public class Bus extends GroundTransport {
 
-    private String model = "Audi A4";
-    private String honk = "Ratatata";
+    private final String model = "Audi A4";
+    private final String honk = "Ratatata";
 
     @Override
     public void honk() {

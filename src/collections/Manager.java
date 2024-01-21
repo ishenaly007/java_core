@@ -3,7 +3,7 @@ package collections;
 import java.util.*;
 
 public class Manager {
-    private static Map<String, User> userMap = new HashMap<>();
+    private static final Map<String, User> userMap = new HashMap<>();
 
     boolean addNewUser(User user) {
         if (userMap.containsKey(user.getLogin())) {

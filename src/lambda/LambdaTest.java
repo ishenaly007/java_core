@@ -136,8 +136,8 @@ interface HowYears {
 }
 
 class Man {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     public int getAge() {
         return age;
@@ -191,7 +191,7 @@ class ExpressionHelper {
 }
 
 class User {
-    private String name;
+    private final String name;
 
     public String getName() {
         return name;

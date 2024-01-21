@@ -1,7 +1,7 @@
 package multithreading.consumer_produser;
 
 public class Producer implements Runnable {
-    private Store store;
+    private final Store store;
 
     public Producer(Store store) {
         this.store = store;

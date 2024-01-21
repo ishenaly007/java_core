@@ -1,17 +1,14 @@
 package time_baby.practice;
 
-import multithreading.threads_pull.CallableTest;
-
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
 public class CallableTestTime implements Callable {
 
-    private LocalDateTime eventDate;
+    private final LocalDateTime eventDate;
 
     public CallableTestTime(LocalDateTime eventDate) {
         this.eventDate = eventDate;

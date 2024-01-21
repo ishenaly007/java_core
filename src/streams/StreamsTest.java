@@ -1,6 +1,5 @@
 package streams;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -52,6 +51,6 @@ public class StreamsTest {
         //collect собирает все что пришло в стриме в конце(можно собирать не только в toList())
         //reduse позволяет делать агрегатные функции и возвращает 1 элемент
         nums.stream().reduce((a, b) -> a + b).orElse(0);
-        
+
     }
 }

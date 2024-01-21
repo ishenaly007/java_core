@@ -8,7 +8,7 @@ public class TestRunnable implements Runnable {
         daemon фоновый ли поток, оно всегда работает
         priority приоритет, но не гарантирует первое выполнение, ими управляет менеджер потоков
     */
-    private String name;
+    private final String name;
 
     public TestRunnable(String name) {
         this.name = name;
