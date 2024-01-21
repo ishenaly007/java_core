@@ -1,10 +1,5 @@
-import javax.sound.midi.Soundbank;
-import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
-import java.util.regex.Pattern;
 
 class Solution {
     public int maximumWealth(int[][] accounts) {
@@ -74,12 +69,20 @@ class Solution {
         }
     }
 
-    /*public boolean canConstruct(String ransomNote, String magazine) {
-        return magazine.contains(ransomNote);
-    }*/
+    public boolean canConstruct(String ransomNote, String magazine) {
+        if (ransomNote.length() > magazine.length()) return false;
+        int[] alphabet = new int[26];
+        for (char c : magazine.toCharArray()) {
+            alphabet[c - 'a']++;
+        }
+        for (char c : ransomNote.toCharArray()) {
+            if (alphabet[c - 'a'] == 0) return false;
+            alphabet[c - 'a']--;
+        }
+        return true;
+    }
 
     public static void main(String[] args) {
-
 
         Solution solution = new Solution();
 
@@ -93,6 +96,6 @@ class Solution {
         ListNode listNode = new ListNode(12, new ListNode(34, new ListNode(23, new ListNode(12, new ListNode(6)))));
         System.out.println(solution.middleNode(listNode));
 
-        //System.out.println(solution.canConstruct("aa", "aab"));
+        System.out.println(solution.canConstruct("aa", "aab"));
     }
 }

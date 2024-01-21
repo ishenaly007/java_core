@@ -8,6 +8,5 @@ public class TestLombokBuilder {
                 .lastName("Narkozuev")
                 .build();
         System.out.println(lombokBuilder);
-
     }
 }
